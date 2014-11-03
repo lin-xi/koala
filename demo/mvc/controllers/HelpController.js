@@ -1,0 +1,2 @@
+app.controller('HelpController', function(){
+});

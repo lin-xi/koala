@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>任务查询</strong></h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input id="searchName" type="text" placeholder="拍摄点名称" class="form-control" maxlength="200"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input id="cityInput" type="text" placeholder="任务所在地" class="form-control" maxlength="100"/>
+                    </div>
+                    <div class="col-md-3" class="dropdown">
+                        <select id="searchState" class="selectpicker">
+                            <option value='0'>全部</option>
+                            <option value='2'>已领取</option>
+                            <option value='3'>提交未完成</option>
+                            <option value='4'>提交完成</option>
+                            <option value='5'>审核中</option>
+                            <option value='6'>审核通过</option>
+                            <option value='7'>已付款</option>
+                            <option value='8'>审核不通过</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="searchBtn" class="btn btn-primary" click="doSearch()">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>我的任务</strong></h3>
+            </div>
+            <div class="panel-body">
+
+                <div id="myTaskTable">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="citySelect"></div>
+
+<div id="panel-close">×</div>
+<div id="popPanel">
+</div>

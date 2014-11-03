@@ -1,0 +1,115 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>任务查询</strong></h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" placeholder="拍摄点名称" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" placeholder="任务所在地" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" placeholder="任务状态" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-primary">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>当前任务</strong></h3>
+            </div>
+            <div class="panel-body">
+
+                <table id="task-table" class="table table-striped table-hover">
+                    <thead class="no-bd">
+                        <tr>
+                            <th style="width:30px;" class="div_checkbox">
+                                <input class="icheck" type="checkbox">
+                            </th>
+                            <th><strong>Product</strong></th>
+                            <th><strong>Reference</strong></th>
+                            <th><strong>Price</strong></th>
+                            <th><strong>Date</strong></th>
+                            <th><strong>Stock</strong></th>
+                            <th class="text-center"><strong>Sales</strong></th>
+                            <th class="text-center"><strong>Activate</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody class="no-bd-y">
+                        <tr>
+                            <td><input class="icheck" type="checkbox"></td>
+                            <td>Product #1</td>
+                            <td>SV 456 878 647</td>
+                            <td class="text-left color-success">$25.2</td>
+                            <td>05/14/2013</td>
+                            <td class="color-success">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" aria-valuetransitiongoal="75">75%</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="sparkline" data-sparkline-color="#7BB2B4" data-sparkline-value="[13,14,16,15,4,14,20,14,12,16,11,17,19,16]"><canvas width="96" height="20" style="display: inline-block; vertical-align: top; width: 96px; height: 20px;"></canvas></div>
+                            </td>
+                            <td class="text-center">
+                                <div class="switch-toggle switch-on switch-animate switch-mini"><div><span class="switch-handle-on switch-primary">ON</span><label>&nbsp;</label><span class="switch-handle-off switch-primary">OFF</span><input class="switch" type="checkbox" checked="" data-size="mini"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="icheck" type="checkbox">
+                            </td>
+                            <td>Product #2 <span class="label bg-red">Low Stock</span></td>
+                            <td>BG 588 735 457</td>
+                            <td class="text-left color-success">$22.5</td>
+                            <td>05/14/2013</td>
+                            <td class="color-success">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" aria-valuetransitiongoal="21">21%</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="sparkline" data-sparkline-color="#c3a8db" data-sparkline-value="[14,17,16,12,15,16,22,15,14,17,11,18,11,12]"><canvas width="96" height="20" style="display: inline-block; vertical-align: top; width: 96px; height: 20px;"></canvas></div>
+                            </td>
+                            <td class="text-center">
+                                <div class="switch-toggle switch-on switch-animate switch-mini"><div><span class="switch-handle-on switch-primary">ON</span><label>&nbsp;</label><span class="switch-handle-off switch-primary">OFF</span><input class="switch" type="checkbox" checked="" data-size="mini"></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="icheck" type="checkbox">
+                            </td>
+                            <td>Product #3</td>
+                            <td>YT 124 856 565</td>
+                            <td class="text-left color-success">$21</td>
+                            <td>05/14/2013</td>
+                            <td class="color-success">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" aria-valuetransitiongoal="58">58%</div>
+                                </div>
+                            </td>
+                            <td class="text-center"> 
+                                <div class="sparkline" data-sparkline-color="#8dae24" data-sparkline-value="[18,14,15,14,13,12,21,16,18,14,12,15,17,19]"><canvas width="96" height="20" style="display: inline-block; vertical-align: top; width: 96px; height: 20px;"></canvas></div>
+                            </td>
+                            <td class="text-center">
+                                <div class="switch-toggle switch-on switch-animate switch-mini"><div><span class="switch-handle-on switch-primary">ON</span><label>&nbsp;</label><span class="switch-handle-off switch-primary">OFF</span><input class="switch" type="checkbox" checked="" data-size="mini"></div></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

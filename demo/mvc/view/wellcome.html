@@ -1,0 +1,67 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">欢迎您</h3>
+    </div>
+    <div class="panel-body text-center">
+    	<div class="row">
+
+    		<div class="col-md-6">
+				<div class="panel no-bd bd-3 panel-stat">
+                    <div class="panel-body bg-red p-15">
+                        <div class="row m-b-6">
+                            <div class="col-md-3">
+                                <img width="150px" height="150px" style="margin:5px;" src="/static/img/camera.png"/>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="m-t-60 w-500">您共领取了<span id="taskNumber"></span>个任务</h3>
+                                <a id="gotoTask" href="javascript:;">领取新任务</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+    		</div>
+    		<div class="col-md-6">
+    			<div class="panel no-bd bd-3 panel-stat">
+                    <div class="panel-body bg-green p-15">
+                        <div class="row m-b-6">
+                            <div class="col-md-3">
+                                <div id="task-donut"></div>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 id="rateDesc" class="m-t-60 w-500">任务成功率<span id="sucessRate" class="p-l-10 p-r-10 bg-red"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    		</div>
+
+    	</div>
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel no-bd bd-3 panel-stat">
+                    <div class="panel-body bg-blue p-15">
+                        <div class="row m-b-6">
+                            <div class="col-md-3">
+                                <img width="150px" height="150px" style="margin:5px;" src="/static/img/level.png"/>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="m-t-40 w-500">等级<span id="user-level" class="p-l-20 p-r-20 bg-red"></span></h3>
+                                <h3 class="m-t-10 w-500">可领取<span id="user-taskCount" ></span>个任务</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+
+        </div>
+    </div>
+</div>

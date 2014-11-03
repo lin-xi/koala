@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>任务查询</strong></h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div style="float:left; padding-top:5px; width:90px;">
+                        任务所在地:
+                    </div>
+                    <div class="col-md-3">
+                        <input id="cityInput" type="text" placeholder="任务所在地" class="form-control" maxlength="100">
+                    </div>
+                    <div class="col-md-3">
+                        <button click="doSearch()" class="btn btn-primary">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong>可领取的任务</strong></h3>
+            </div>
+            <div class="panel-body">
+
+                <div id="taskTable">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="citySelect"></div>
+
+<div id="panel-close">×</div>
+<div id="popPanel">
+</div>
