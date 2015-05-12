@@ -52,7 +52,6 @@
 			dependences: dependences,
 			fn: func
 		};
-		loadService(dependences);
 		checkDependence(className);
 	};
 
@@ -80,7 +79,6 @@
 			dependences: dependences,
 			fn: newFunction(func)
 		};
-		loadService(dependences);
 		checkDependence(className);
 	};
 
@@ -117,7 +115,7 @@
 				});
 			}
 		}
-		// runController('RootController', document.body);
+		runController('RootController', document.body);
 		if(opts.plugins){
 			//DIRECTIVE.plugins
 		}
@@ -147,7 +145,6 @@
 			dependences: dependences,
 			fn: func
 		};
-		loadPlugin(dependences);
 		checkDependence(className);
 	};
 	Mvc.prototype.redirect = function(path){
@@ -268,26 +265,6 @@
 	    F.prototype = func.prototype;
 	    return new F();
 	};
-	function loadController(name){
-		var path = _config.base + 'controllers/' + name + '.js';
-		_.loadJs(path);
-	}
-	function loadService(names){
-		if(names.length > 0){
-			for(var i=0, len=names.length; i<len; i++){
-				var path = _config.base + 'services/' + names[i] + '.js';
-				_.loadJs(path);
-			}
-		}
-	}
-	function loadPlugin(names){
-		if(names.length > 0){
-			for(var i=0, len=names.length; i<len; i++){
-				var path = _config.base + 'plugins/' + names[i] + '.js';
-				_.loadJs(path);
-			}
-		}
-	}
 	function newDataScope(data, scope){
 		var s = new Scope(_.md5(), null, null);
 		_.extend(s, data);
@@ -380,7 +357,6 @@
 				controller: controllerName,
 				dom: dom
 			});
-			loadController(controllerName);
 		}
 	}
 
@@ -927,7 +903,7 @@
             }
         }
         script.type = 'text/javascript';
-        script.src = path;
+        script.src = url;
         head.appendChild(script);
         return script;
     };
